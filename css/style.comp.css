@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.666666667;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: left 0 top 0, right 0 bottom 0;
+  background-size: 39.7%, 76.9%; }
+  @media only screen and (max-width: 48em) {
+    body {
+      height: auto;
+      margin: 8rem 0; } }
+  @media only screen and (max-width: 31em) {
+    body {
+      background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+      background-repeat: no-repeat no-repeat;
+      background-position: left 0 top 0, right 0 bottom 0;
+      background-size: 100%, 100%; } }
+
+.container {
+  max-width: 116rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
+  gap: 3rem; }
+
+.heading-1 {
+  color: #502050;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.71px;
+  margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 48em) {
+    .heading-1 {
+      font-size: 3.84rem; } }
+  @media only screen and (max-width: 31em) {
+    .heading-1 {
+      font-size: 3.2rem; } }
+
+.section-rating {
+  grid-template-columns: repeat(2, 6fr);
+  margin-bottom: 3.8rem; }
+  @media only screen and (max-width: 59em) {
+    .section-rating {
+      grid-template-columns: 1fr; } }
+  @media only screen and (max-width: 31em) {
+    .section-rating {
+      text-align: center; } }
+
+.rating__text-box {
+  padding-right: 11rem; }
+  @media only screen and (max-width: 59em) {
+    .rating__text-box {
+      padding-right: 0; } }
+
+.rating__text {
+  color: #937b92; }
+
+.rating__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 23.4rem; }
+  @media only screen and (max-width: 31em) {
+    .rating__details {
+      gap: 1.6rem; } }
+
+.rating__detail {
+  max-width: 44.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  color: #502050;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: normal;
+  background-color: #f7f2f7;
+  padding: 1.85rem 8.8rem 1.85rem 3.2rem;
+  border-radius: 0.8rem; }
+  .rating__detail--middle {
+    align-self: center; }
+  .rating__detail--bottom {
+    align-self: flex-end; }
+  @media only screen and (max-width: 31em) {
+    .rating__detail--middle, .rating__detail--bottom {
+      align-self: inherit; } }
+  @media only screen and (max-width: 31em) {
+    .rating__detail {
+      flex-direction: column;
+      padding: 1.5rem 3.2rem;
+      gap: 1.6rem; } }
+
+.section-testimony {
+  grid-template-columns: repeat(3, 3fr);
+  align-items: flex-start;
+  min-height: 26.6rem; }
+  @media only screen and (max-width: 48em) {
+    .section-testimony {
+      grid-template-columns: 1fr; } }
+
+.testimony__card {
+  background-color: #502050;
+  padding: 4rem 3.2rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 31em) {
+    .testimony__card {
+      padding: 4rem 3rem; } }
+  .testimony__card--center {
+    align-self: center; }
+  .testimony__card--end {
+    align-self: flex-end; }
+
+.testimony__heading {
+  display: flex;
+  gap: 2.3rem;
+  align-items: center;
+  margin-bottom: 2.3rem; }
+
+.testimony__img {
+  width: 4rem;
+  border-radius: 50%; }
+
+.testimony__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.testimony__name, .testimony__verification {
+  font-size: 1.3rem;
+  letter-spacing: normal; }
+
+.testimony__name {
+  color: white;
+  font-weight: 700; }
+
+.testimony__verification {
+  color: #ee68a4;
+  font-weight: 400; }
+
+.testimony__text {
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: -0.23px;
+  line-height: 1.692307692; }
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 31em) {
+    .attribution {
+      padding: 0 2.5rem; } }
+  .attribution__link {
+    color: #3e52a3; }
